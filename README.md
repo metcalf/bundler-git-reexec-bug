@@ -1,3 +1,5 @@
+This repo contains scripts to reproduce https://github.com/bundler/bundler/issues/6049. The
+bug is:
 * Start a Ruby process that calls `Bundler.setup`.
 * Update a git reference in the Gemfile to a value that isn't yet checked out.
 * Exec a process from the original Ruby process that calls `bundle install`.
